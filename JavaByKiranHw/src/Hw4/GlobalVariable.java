@@ -1,28 +1,27 @@
 package Hw4;
 
-import HW1.Hw1;
-
 public class GlobalVariable{
-	int sum(int a, int b) {
+	int a =45,b = 15;
+	int sum() {
 		int ans1 = a + b;
 		return ans1;
 	}
 	
-	int sub(int a, int b) {
+	int sub() {
 		int ans2 = a-b;
 		return ans2;
 	}
 	
-	int multiply(int a, int b) {
+	int multiply() {
 		int ans3 = a*b;
 		return ans3;
 	}
 	
-	int divide (int a,int b) {
+	int divide () {
 		int ans4 =a/b;
 		return ans4;
 	}
-	int mod (int a,int b) {
+	int mod () {
 	   int ans5 = a%b;
 	   return ans5;
 	}
@@ -31,24 +30,23 @@ public class GlobalVariable{
 
 public static void main(String[] args) {
 
+	GlobalVariable g = new GlobalVariable();
 	
+		int output1 = g.sum();
+		System.out.println("addition is "+output1);
 		
-			Hw1 s = new Hw1();
-			int output1 = s.sum(45, 15);
-			System.out.println("addition is "+output1);
-			
-			int output2 =s.sub(45, 15);
-			System.out.println("substraction is "+output2);
-			
-			int output3 =s.multiply(45, 15);
-			System.out.println("multiplication is "+output3);
-
-			float output4 =s.divide(45, 15);
-			System.out.println("division i "+output4);
-
-			int output5 = s.mod(44,15);
-			System.out.println("mod is "+ output5);
-
+		int output2 =g.sub();
+		System.out.println("substraction is "+output2);
+		
+		int output3 =g.multiply();
+		System.out.println("multiplication is "+output3);
+	
+		float output4 =g.divide();
+		System.out.println("division i "+output4);
+	
+		int output5 = g.mod();
+		System.out.println("mod is "+ output5);
+	
 
 		}
 }
