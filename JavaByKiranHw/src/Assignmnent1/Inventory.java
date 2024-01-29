@@ -23,7 +23,7 @@ class InventoryItem{
         if (amount > this.quantity) {
             System.out.println("Cannot remove " + amount + " items, only " + this.quantity + " available.");
         } else {
-            this.quantity = this.quantity + amount; 
+            this.quantity = this.quantity - amount; 
             InventoryItem.totalItems =  InventoryItem.totalItems- amount; 
         }
 	}
@@ -40,8 +40,8 @@ public class Inventory{
 	     item2.addToInventory(1);
 	     item3.removeFromInventory(4);
 	        System.out.println("Total items in stock: " + InventoryItem.getTotalItems());
-	        System.out.println("Item 1 " + item1.getName() +  item1.getQuantity());
-	        System.out.println("Item 2 " + item2.getName() + item2.getQuantity());
-	        System.out.println("Item 3 " + item3.getName()  + item3.getQuantity());
+	        System.out.println("Item 1 " + item1.getName() + " "+  item1.getQuantity());
+	        System.out.println("Item 2 " + item2.getName() +" "+ item2.getQuantity());
+	        System.out.println("Item 3 " + item3.getName()  +" "+ item3.getQuantity());
 	}
 }
